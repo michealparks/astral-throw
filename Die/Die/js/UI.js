@@ -1,0 +1,4 @@
+﻿var UI = function(){
+
+	return;
+}();

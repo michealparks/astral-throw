@@ -1,0 +1,157 @@
+﻿body {
+
+}
+
+.dice-area {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	background-color: #2A8077;
+}
+
+#left-dice-area {
+	left: 0;
+}
+
+#right-dice-area {
+	right: 0;
+}
+
+.dice-area .die {
+	padding: 0;
+	position: relative;
+	width: 75px;
+	height: 75px;
+	background-color: #FCFBB8;
+	border-bottom: 7px solid #CCCB95;
+	border-radius: 13px;
+	text-align: center;
+  	transition: transform 2s, margin-top 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  	font-size: 45px;
+  	color: #222;
+  	backface-visibility: hidden;
+}
+
+.dice-area .die-jump {
+	margin: 5% 20%;
+}
+
+#left-dice-area .die {
+	float: left;
+}
+
+#right-dice-area .die {
+	float: right;
+}
+
+#options-menu {
+	position: absolute;
+	width: 500px;
+	height: 15%;
+	top: 10%;
+	left: 50%;
+	margin-left: -270px;
+	border-radius: 13px;
+	border-bottom: 7px solid #1C050C;
+	background-color: #330916;
+	padding: 20px;
+}
+
+#options-menu .option {
+	padding: 0 10px;
+	display: inline-block;
+	font-size: 30px;
+}
+
+#num-die, #num-sides {
+	color: white;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	font-size: 60px;
+}
+
+.left-arrow {
+	display: inline-block;
+	top: 35px;
+	left: 50px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-right: 30px solid #FCFBB8;
+}
+
+.right-arrow {
+	display: inline-block;
+	top: 35px;
+	left: 50px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid #FCFBB8;
+}
+
+#myAd {
+	left: 50%;
+	margin-left: -364px;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+	.dice-area .die {
+		margin: 10% 20%;
+	}
+
+	.dice-area .die-jump {
+		margin: 5% 20%;
+	}
+}
+
+@media screen and (-ms-view-state: filled) {
+	.dice-area .die {
+		margin: 15% 20%;
+	}
+
+	.dice-area .die-jump {
+		margin: 5% 20%;
+	}
+}
+
+@media screen and (-ms-view-state: snapped) {
+	.option {
+		margin: 0;
+		padding: 0;
+	}
+
+	.descript {
+		font-size: 14px;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	input {
+		margin: 10px 0;
+	}
+
+	.dice-area .die {
+		margin: 20% 20%;
+	}
+
+	.dice-area .die-jump {
+		margin: 5% 20%;
+	}
+
+	#options-menu {
+		padding-top: 0;
+		margin-left: -46%;
+		width: 80%;
+		height: 28%;
+		top: auto;
+		bottom: 100px;
+	}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

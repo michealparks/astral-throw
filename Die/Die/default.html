@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Die</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Die references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/jquery-2.0.3.min.js"></script>
+
+    <!-- Application -->
+    <script src="/js/events.js"></script>
+    <script src="/js/logic.js"></script>
+    <script src="/js/UI.js"></script>
+    <script src="/js/purchase.js"></script>
+    <script src="/js/default.js"></script>
+
+    <!-- Microsoft Advertising required references -->
+    <script src="/MSAdvertisingJS/ads/ad.js"></script>
+
+</head>
+<body>
+    <section class="dice-area" id="left-dice-area"></section>
+    <section class="dice-area" id="right-dice-area"></section>
+    <section id="options-menu">
+        <center>
+        <div class="option" id="die-num-options">
+            <div class="descript">
+                Number of Die
+            </div>
+            <div class="arrow left-arrow"></div>
+            <div id="num-die">4</div>
+            <div class="arrow right-arrow"></div>
+        </div>
+
+        <div class="option" id="die-side-options">
+            <div class="descript">
+                Sides on Die
+            </div>
+            <div class="arrow left-arrow"></div>
+            <div id="num-sides">6</div>
+            <div class="arrow right-arrow"></div>
+        </div>
+        </center>
+    </section>
+    <div id="myAd" style="position: absolute; bottom: 0; width: 728px; height: 90px; z-index: 100" 
+     data-win-control="MicrosoftNSJS.Advertising.AdControl" 
+     data-win-options="{applicationId: 'd25517cb-12d4-4699-8bdc-52040c712cab', adUnitId: '10043000'}">
+    </div>
+
+<script type="text/template" id="die-template"><div class="die"></div></script>
+</body>
+</html>
